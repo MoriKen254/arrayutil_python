@@ -49,6 +49,3 @@ class ArrayUtilTestSuite(unittest.TestSuite):
     self.addTest(ArrayUtilTestMin())
     self.addTest(ArrayUtilTestMax())
 
-
-if __name__ == '__main__':
-  rostest.rosrun('arrayutil_python', 'arrayutil_python_test', 'arrayutil_python_testcases.ArrayUtilTestSuite')
