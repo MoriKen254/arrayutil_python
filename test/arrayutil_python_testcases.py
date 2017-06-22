@@ -18,28 +18,28 @@ class ArrayUtilTestSum(unittest.TestCase):
     sum_instance = sub.Sum()
     sum_instance.setArray(test_array)
     result = sum_instance.operate()
-    self.assertEquals(result, answer_sum, "Sum test")
+    self.assertEquals(result, answer_sum)
 
 class ArrayUtilTestAve(unittest.TestCase):
   def runTest(self):
     ave_instance = sub.Ave()
     ave_instance.setArray(test_array)
     result = ave_instance.operate()
-    self.assertEquals(result, answer_ave, "Ave test")
+    self.assertEquals(result, answer_ave)
 
 class ArrayUtilTestMin(unittest.TestCase):
   def runTest(self):
     min_instance = sub.Min()
     min_instance.setArray(test_array)
     result = min_instance.operate()
-    self.assertEquals(result, answer_min, "Min test")
+    self.assertEquals(result, answer_min)
 
 class ArrayUtilTestMax(unittest.TestCase):
   def runTest(self):
     max_instance = sub.Max()
     max_instance.setArray(test_array)
     result = max_instance.operate()
-    self.assertEquals(result, answer_max, "Max test")
+    self.assertEquals(result, answer_max)
 
 class ArrayUtilTestSuite(unittest.TestSuite):
   def __init__(self):
